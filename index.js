@@ -5,11 +5,7 @@ function contDay() {
     console.log(date) ;
 }
 
-function totalPrice(price) {
-     price=document.parseInt(price);
-    let days = contDay();
-    let total = price * days;
-    console.log(total);
+function totalPrice() {
 
 }
 
