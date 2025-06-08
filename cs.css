@@ -66,11 +66,14 @@ body{
     position: fixed;
     left: 50%;
     padding: 18px;
-    background-color: #ffffff;
+    background-color: white;
 }
 #homePageDes{
     font-size: 30px;
     position: fixed;
     left: 40%;
     top: 50%;
+}
+#BookStyle{
+    position: relative;
 }

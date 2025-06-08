@@ -2,54 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>BookNow</title>
+    <title>Book Now</title>
     <link rel="stylesheet" href="cs.css">
     <script src="index.js"></script>
 </head>
 <body>
 <div id="BookStyle">
-<div id="header">
-    <div class="headerNew"><span><a class="headerNew" href="Home.html">Hotel</a></span></div>
-    <a class="links" href="Home.html">Home</a>
-    <a class="links" href="BookNow.html">Book Now</a>
-    <a class="links" href="Rooms.html">Rooms</a>
-    <a class="links" href="About.html">About</a>
-</div>
-<div id="main">
-    <form id="bookForm">
-        <h3>Your Information</h3>
-        <label for="name">Full Name:</label>
-        <input type="text" id="name"><br>
-        <label for="email">Email:</label>
-        <input type="text" id="email"><br>
-        <label for="mobile">Mobile:</label>
-        <input type="tel" id="mobile"><br>
-        <label for="startDate">Chick in Date:</label>
-        <input type="date" id="startDate" value="date"><br>
-        <label for="endDate" >Chick out Date:</label>
-        <input type="date" id="endDate" ><br>
-        <p></p>
-        <hr>
-        <label style="font-size: 25px">Room Type:</label><br>
-        <input type="radio"id="Stander"name="roomType"value="100$"onchange="totalPrice();"  >
-        <label for="Stander">standered</label><br>
-        <input type="radio"id="delux"name="roomType" value="200$"onchange="totalPrice();">
-        <label for="delux">delux</label><br>
-        <input type="radio"id="suite"name="roomType"value="300$"onchange="totalPrice();">
-        <label for="suite">suite</label><br>
-        <hr>
-        <label style="font-size: 25px">Extra thing:</label><br>
-        <input type="checkbox"id="serves"value="10" onchange="totalPrice();" >Gym 10$<br>
-        <input type="checkbox"id="serves2"value="50"onchange="totalPrice();" >Spa 50$<br>
-        <input type="checkbox"id="serves3"value="15" onchange="totalPrice();">Brackfast 15$<br>
-        <input type="submit" value="submit"onclick="click12();"id="submit" >
-
-        <br>
-            <h1 id="totalPrice1" ></h1>
+    <div id="header">
+        <div class="headerNew"><span><a class="headerNew" href="Home.html">Hotel</a></span></div>
+        <a class="links" href="Home.html">Home</a>
+        <a class="links" href="BookNow.html">Book Now</a>
+        <a class="links" href="Rooms.html">Rooms</a>
+        <a class="links" href="About.html">About</a>
+    </div>
+    <div id="main">
+        <form id="bookForm">
+            <h3>Your Information</h3>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" required><br>
+            <label for="startDate">Check-in Date:</label>
+            <input type="date" id="startDate" required><br>
+            <label for="endDate">Check-out Date:</label>
+            <input type="date" id="endDate" required><br>
+            <hr>
+            <label style="font-size: 25px">Room Type:</label><br>
+            <input type="radio" id="Stander" name="roomType" value="100$" onchange="totalPrice();" required>
+            <label for="Stander">Standard</label><br>
+            <input type="radio" id="delux" name="roomType" value="200$" onchange="totalPrice();">
+            <label for="delux">Deluxe</label><br>
+            <input type="radio" id="suite" name="roomType" value="300$" onchange="totalPrice();">
+            <label for="suite">Suite</label><br>
+            <hr>
+            <label style="font-size: 25px">Extras:</label><br>
+            <input type="checkbox" id="serves" value="10" onchange="totalPrice();"> Gym $10<br>
+            <input type="checkbox" id="serves2" value="50" onchange="totalPrice();"> Spa $50<br>
+            <input type="checkbox" id="serves3" value="15" onchange="totalPrice();"> Breakfast $15<br>
+            <input type="submit" value="Submit" onclick="click12();" id="submit">
+            <h1 id="totalPrice1"></h1>
             <div id="summary" hidden="hidden">
-            <h4 id="resipte1"></h4>
-        </div>
-    </form>
+                <h4 id="resipte1"></h4>
+            </div>
+        </form>
     </div>
 </div>
 </body>
