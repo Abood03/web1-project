@@ -9,7 +9,7 @@ function totalPrice() {
     console.log(date) ;
     let total=0
     if(document.getElementById("name").value!=""&&document.getElementById("email").value!=""&&
-        document.getElementById("mobile").value!=""){
+        document.getElementById("mobile").value!=""&&date>=1){
         if (document.getElementById("Stander").checked){
             if (document.getElementById("serves").checked){
                 total = total + parseInt(document.getElementById("serves").value);
