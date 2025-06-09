@@ -53,8 +53,7 @@ body{
     border-radius: 15px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
-    margin: 20px auto; /* Center the summary horizontally */
-}
+    margin: 20px auto; }
 
 #BookStyle{
     position: relative;
