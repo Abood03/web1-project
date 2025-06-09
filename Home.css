@@ -1,6 +1,10 @@
 body{
     background-color: whitesmoke;
 }
+.headerNew:hover{
+    color: orange;
+
+}
 .headerNew{
     color: white;
     text-align: left;
@@ -37,7 +41,7 @@ body{
     align-content: center;
     font-size: 60px;
     position: fixed;
-    left: 30%;
+    left: 26%;
     top: 30%;
 
 
