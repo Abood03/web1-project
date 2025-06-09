@@ -3,11 +3,12 @@ body{
     background-image: url("photos/screen_2x.jpg");
     background-size: 100%;
 }
-#header{
+#header {
     text-align: right;
     color: white;
     font-size: 20px;
     padding: 20px;
+    backdrop-filter: blur(19px);
 }
 .headerNew{
     color: white;
@@ -28,28 +29,33 @@ body{
 }
 #bookForm{
     width:30%;
-    top: 80px;
+    top: 150px;
     font-size: 20px;
-    padding: 10px;
+    padding: 20px;
     color: black;
     position: fixed;
     background-color: whitesmoke;
     left: 20%;
-    text-align: center;
-    height: 80%;
+    text-align: left;
+    height: 75%;
     border-radius: 15px;
+    font-size: 30px;
+    box-shadow: 0 0 50px;
+
 }
 #main{
     position: fixed;
 
+
 }
 #summary{
+
     background-color: whitesmoke;
     width: 25%;
-    height: 78%;
+    height: 75%;
     padding: 20px;
     position: fixed;
-    top: 9%;
+    top: 150px;
     border-radius: 15px;
     box-shadow:0 0 50px  ;
     left: 59%;
@@ -59,3 +65,23 @@ body{
 
 
 }
+#submit{
+
+    background-color: coral;
+    position: relative;
+    top: 100px;
+    left: 40%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 18px;
+    font-size: 20px;
+
+}
+#info{
+    text-align: center;
+}
+
+
+
+
+

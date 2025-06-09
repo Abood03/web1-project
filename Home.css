@@ -34,22 +34,29 @@ body{
     color: cornflowerblue;
 }
 #homePageDes{
-    font-size: 30px;
+    align-content: center;
+    font-size: 60px;
     position: fixed;
-    left: 35%;
-    top: 45%;
+    left: 30%;
+    top: 30%;
+
 
 }
 #shadowHome{
-    backdrop-filter: blur(6px);
+    /*box-shadow: 0 0 90px;*/
+    backdrop-filter: blur(10px);
     padding: 19px;
     border-radius: 35px;
+
 }
 #BookNow{
+    border-color: white;
     background-color: coral;
     position: fixed;
-    left: 46%;
-    padding: 18px;
+    left: 48%;
+    padding: 20px;
     background-color: white;
     border-radius: 18px;
+    font-size: 20px;
+    box-shadow: 0 0 30px black;
 }

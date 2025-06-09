@@ -50,7 +50,7 @@ function totalPrice() {
         document.getElementById("summary").removeAttribute("hidden");
         // or document.getElementById("summary").hidden=false;
         document.getElementById("summary").innerHTML =
-            "<h3>Reservation receipt</h3>" +
+            "<h3 >Reservation receipt</h3>" +
             "<p><b>Name: </b>" + fullName + "</p>" +
             "<p><b>Email: </b>" + email + "</p>" +
             "<p><b>Number of Nights: </b>" + date + "</p>" +
