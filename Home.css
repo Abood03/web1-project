@@ -59,4 +59,5 @@ body{
     border-radius: 18px;
     font-size: 20px;
     box-shadow: 0 0 30px black;
+    cursor: pointer;
 }
