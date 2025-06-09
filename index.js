@@ -46,18 +46,17 @@ function totalPrice() {
             }
             total=total+parseInt(document.getElementById("suite").value);
         }
-        document.getElementById("summary").removeAttribute("hidden");
-        document.getElementById("summary").removeAttribute("hidden");
-        // or document.getElementById("summary").hidden=false;
-        document.getElementById("summary").innerHTML =
-            "<h3 >Reservation receipt</h3>" +
-            "<p><b>Name: </b>" + fullName + "</p>" +
-            "<p><b>Email: </b>" + email + "</p>" +
-            "<p><b>Number of Nights: </b>" + date + "</p>" +
-            "<p><b>Receipt Date: </b>" + curruntTime.getDate()+"/"+(curruntTime.getMonth()+1)+"/"+curruntTime.getFullYear() + "</p>" +
-            "<p><b>phone: </b>" + phoneNum + "</p>" +
-            "<p><b>Total Price: </b>" + (total*date) + "$</p>";
-
+            if (total>0){
+                document.getElementById("summary").removeAttribute("hidden");
+                document.getElementById("summary").innerHTML =
+                "<h3 >Reservation receipt</h3>" +
+                "<p><b>Name: </b>" + fullName + "</p>" +
+                "<p><b>Email: </b>" + email + "</p>" +
+                "<p><b>Number of Nights: </b>" + date + "</p>" +
+                "<p><b>Receipt Date: </b>" + curruntTime.getDate()+"/"+(curruntTime.getMonth()+1)+"/"+curruntTime.getFullYear() + "</p>" +
+                "<p><b>phone: </b>" + phoneNum + "</p>" +
+                "<p><b>Total Price: </b>" + (total*date) + "$</p>";
+            }
         }
     }
 function click12(){

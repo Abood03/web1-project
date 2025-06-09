@@ -9,8 +9,9 @@ body{
     color: white;
     text-align: left;
     position: fixed;
-    font-size: 25px;
+    font-size: 28px;
     text-decoration: none;
+    font-weight: bold;
 }
 .links{
     color: white;
@@ -18,6 +19,7 @@ body{
     text-decoration: none;
     position: relative;
     top: 4px;
+    font-weight: bold;
 }
 .links:hover{
     color: orange;
@@ -32,7 +34,7 @@ body{
     color: white;
     font-size: 20px;
     padding: 20px;
-    backdrop-filter: blur(19px);
+    /*backdrop-filter: blur(19px);*/
 }
 #mainButtom{
     color: cornflowerblue;
@@ -47,15 +49,17 @@ body{
 
 }
 #shadowHome{
-    /*box-shadow: 0 0 90px;*/
-    backdrop-filter: blur(10px);
+    text-shadow: 0 0 10px cadetblue,
+    0 0 20px lightskyblue,
+    0 0 30px lightblue;
+    /*backdrop-filter: blur(4px);*/
     padding: 19px;
     border-radius: 35px;
 
 }
 #BookNow{
     border-color: white;
-    background-color: coral;
+
     position: fixed;
     left: 48%;
     padding: 20px;
@@ -64,4 +68,8 @@ body{
     font-size: 20px;
     box-shadow: 0 0 30px black;
     cursor: pointer;
+}
+#BookNow:hover{
+    background-color: orange;
+    border-color: orange;
 }
