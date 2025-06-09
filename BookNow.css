@@ -44,7 +44,7 @@ body{
 #resipte {
     width: 80%;
     max-width: 600px;
-    margin: 20px auto; /* Center the receipt horizontally */
+    margin: 20px auto;
 }
 
 #summary {
@@ -56,9 +56,6 @@ body{
     margin: 20px auto; }
 
 #BookStyle{
-    position: relative;
-
-
 }
 #submit {
     background-color: whitesmoke;
