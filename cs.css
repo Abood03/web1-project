@@ -47,6 +47,7 @@ body{
     color: white;
     font-size: 20px;
     padding: 20px;
+    backdrop-filter: blur(19px);
 }
 #mainButtom{
     color: cornflowerblue;
@@ -62,16 +63,68 @@ body{
 #BookNow{
     background-color: coral;
     position: fixed;
-    left: 50%;
+    left: 46%;
     padding: 18px;
     background-color: white;
+    border-radius: 18px;
 }
 #homePageDes{
     font-size: 30px;
     position: fixed;
-    left: 40%;
-    top: 50%;
+    left: 35%;
+    top: 45%;
+
+
 }
 #BookStyle{
     position: relative;
+    background-image: url("photos/screen_2x.jpg");
+    background-size: 100%;
+
 }
+#shadowHome{
+    backdrop-filter: blur(6px);
+    padding: 19px;
+    border-radius: 35px;
+}
+#photo1{
+    position: fixed;
+    top: 17%;
+    width: 25%;
+    left: 1%;
+
+}
+#photo2{
+    position: fixed;
+    width: 25%;
+    top: 17%;
+    left: 29%;
+}
+#photo3{
+    position: fixed;
+    width: 25%;
+    top: 17%;
+    left: 57%;
+}
+#RoomsType1{
+    position: fixed;
+    top: 50%;
+    left: 2%;
+    width: 25%;
+}
+#RoomsBody{
+
+}
+#RoomsType2{
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    width: 25%;
+}
+#RoomsType3{
+    position: fixed;
+    top: 50%;
+    left: 58%;
+    width: 25%;
+}
+

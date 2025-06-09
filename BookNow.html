@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Book Now</title>
-    <link rel="stylesheet" href="cs.css">
+    <link rel="stylesheet" href="BookNow.css">
+
     <script src="index.js"></script>
 </head>
 <body>
@@ -38,9 +39,9 @@
             <label for="suite">Suite 300$/N</label><br>
             <hr>
             <label style="font-size: 25px">Extras:</label><br>
-            <input type="checkbox" id="serves" value="10" onchange="totalPrice();"> Gym $10<br>
+            <input type="checkbox" id="serves" value="10" onchange="totalPrice(); "> Gym $10<br>
             <input type="checkbox" id="serves2" value="50" onchange="totalPrice();"> Spa $50<br>
-            <input type="checkbox" id="serves3" value="15" onchange="totalPrice();"> Breakfast $15<br>
+            <input type="checkbox"id="serves3" value="15" onchange="totalPrice();"> Breakfast $15<br>
             <input type="submit" value="Submit" onclick="click12();" id="submit">
             <h1 id="totalPrice1"></h1>
             <div id="summary" hidden="hidden">
