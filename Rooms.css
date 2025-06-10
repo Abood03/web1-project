@@ -56,6 +56,9 @@ body{
      padding: 8px;
 }
  #standerDesc{
+     color: whitesmoke;
+     font-weight: bolder;
+     font-size: 20px;
      width: 22%;
      position: relative;
      z-index: auto;
