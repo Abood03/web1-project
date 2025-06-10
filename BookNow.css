@@ -14,7 +14,7 @@ body{
 .headerNew{
     color: white;
     text-align: left;
-    position: fixed;
+    position: absolute;
     font-size: 28px;
     text-decoration: none;
     font-weight: bold;
