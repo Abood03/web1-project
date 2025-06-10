@@ -9,7 +9,7 @@ body{
     color: white;
     font-size: 20px;
     padding: 20px;
-    background-color: black;
+
     /*backdrop-filter: blur(19px);*/
 }
 
@@ -36,11 +36,22 @@ body{
 .links:hover{
     color: orange;
 }
+
 .photos{
+
     text-align: center;
-    padding: 10px;
     background-color: white;
     padding: 20px;
+    border-radius: 20px;
+    height: 90%;
+    width: 90%;
+    margin: auto;
+
+}
+.Desc{
+    display: flex;
+
+
 }
 #photos1{
     width: 25%;
@@ -57,13 +68,29 @@ body{
     width: 25%;
     position: relative;
      padding: 8px;
+
 }
- #standerDesc{
+ #standerDesc1{
      width: 22%;
      position: relative;
      z-index: auto;
      left: 12%;
-
+     display: flex;
  }
+#standerDesc2{
+    display: flex;
+    width: 22%;
+    position: relative;
+    z-index: auto;
+    left: 17%;
 
+}
+#standerDesc3{
+    display: flex;
+    width: 22%;
+    position: relative;
+    z-index: auto;
+    left: 21%;
+
+}
 
