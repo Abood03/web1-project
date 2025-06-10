@@ -34,7 +34,7 @@ body{
     color: orange;
 }
 .photos{
-    height: 25%;
+    align-items: center;
 }
 #photos1{
     width: 25%;
