@@ -9,14 +9,15 @@ body{
     color: white;
     font-size: 20px;
     padding: 20px;
-    backdrop-filter: blur(19px);
+    /*backdrop-filter: blur(19px);*/
 }
 .headerNew{
     color: white;
     text-align: left;
     position: fixed;
-    font-size: 25px;
+    font-size: 28px;
     text-decoration: none;
+    font-weight: bold;
 }
 .headerNew:hover{
     color: orange;
@@ -28,6 +29,7 @@ body{
     text-decoration: none;
     position: relative;
     top: 4px;
+    font-weight: bold;
 }
 .links:hover{
     color: orange;
