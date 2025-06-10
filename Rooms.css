@@ -39,11 +39,14 @@ body{
 .photos{
     text-align: center;
     padding: 10px;
+    background-color: white;
+    padding: 20px;
 }
 #photos1{
     width: 25%;
     position: relative;
     padding: 8px;
+
 }
 #photos2{
     width: 25%;
@@ -56,9 +59,6 @@ body{
      padding: 8px;
 }
  #standerDesc{
-     color: whitesmoke;
-     font-weight: bolder;
-     font-size: 20px;
      width: 22%;
      position: relative;
      z-index: auto;
