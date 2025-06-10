@@ -33,6 +33,23 @@ body{
 .links:hover{
     color: orange;
 }
-#photo1{
-    width: 10%;
+.photos{
+    height: 25%;
 }
+#photos1{
+    width: 25%;
+    position: relative;
+    left: 1%;
+}
+#photos2{
+    width: 25%;
+    position: relative;
+    left: 2%;
+}#photos3{
+    width: 25%;
+    position: relative;
+     left: 3%;
+
+}
+
+
