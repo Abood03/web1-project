@@ -44,7 +44,7 @@ body{
     background-color: white;
     padding: 20px;
     border-radius: 20px;
-    height: 90%;
+    height: 300%;
     width: 90%;
     margin: auto;
 
@@ -54,22 +54,15 @@ body{
 
 
 }
-#photos1{
+.photos1 {
     width: 25%;
     position: relative;
     padding: 8px;
+    text-align: center;
 
 }
-#photos2{
-    width: 25%;
-    position: relative;
-    padding: 8px;
-
-}#photos3{
-    width: 25%;
-    position: relative;
-     padding: 8px;
-
+.photos1:hover {
+    box-shadow: 0 0 30px black;
 }
  #standerDesc1{
      width: 22%;
@@ -99,5 +92,22 @@ body{
     top: 70%;
     text-align: center;
     left: 42%;
+}
+#bch{
+    padding: 5px;
+    display: flex;
+    width: 50px;
+    height:50px;
+}
+#fa{
+
+        text-shadow: 0 0 10px cadetblue,
+        0 0 20px lightskyblue,
+        0 0 30px lightblue;
+        backdrop-filter: blur(40px);
+        padding: 19px;
+        border-radius: 35px;
+        font-family: Century;
+
 }
 

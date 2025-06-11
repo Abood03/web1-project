@@ -5,52 +5,101 @@
     <title>Title</title>
     <script src="Rooms.js"></script>
     <link rel="stylesheet" href="Rooms.css">
+
+
+
 </head>
 <body>
 <div id="header">
     <div class="headerNew"><span><a class="headerNew" href="Home.html">Hotel</a></span></div>
     <a class="links" href="Home.html">Home</a>
-    <a class="links" href="BookNow.html">Book Now</a>
-    <a class="links" href="Rooms.html">Rooms</a>
+    <a class="links" href="BookNow.html" >Book Now</a>
+    <a class="links" href="Rooms.html" onclick="all()" >Rooms</a>
     <a class="links" href="About.html">About</a>
 </div>
 <br>
 <div class="photos">
-<h1 style="font-family: Century">Accommodation</h1>
+<h1 id = "fa">Facilities</h1>
+    <hr>
 
+    <br>
+    <br>
+    <div>
 
-    <img id="photos1" src="photos/room%20pics/standerd/Hyatt-Regency-Aqaba-P034-Marina-View-Room-King.16x9.jpg">
-    <img id="photos2" src="photos/room%20pics/delux/Hyatt-Regency-Aqaba-P036-Guest-Room-2-Twin-Beds.16x9.jpg">
-    <img id="photos3" src="photos/room%20pics/suite/Hyatt-Regency-Aqaba-Ayla-Resort-P108-Royal-Suite-Bedroom.16x9.jpg">
-
-
-<div class="Desc">
-    <p id="standerDesc1">
-        Experience this sensational 402m2 suite with one king size bed, 363m2 marina view terrace,
-        separate living/dining room, kitchenette, office, rain shower and deep soaking tub. This is
-        a premium suite. See World of Hyatt program terms for upgrade eligibility.
-    </p>
-
-    <p id="standerDesc2">
-        Experience spectacular views of the scenic marina
-        in this spacious 43m2 room featuring two twin beds
-        a private terrace and a marble bathroom with rain shower
-        and a deep soaking tub.</p>
-    <p id="standerDesc3">
-        Enjoy this Spacious 84m2 suite with one king size bed
-        terrace, separate living room, rain shower and deep soaking tub
-        This is a standard suite. See World of Hyatt program
-        terms for upgrade eligibility.</p>
-
-</div>
+    <h1 style="font-family: Century">Rooms</h1>
+        <hr>
+    <br>
+    <h2 style="font-family: Century">Standerd</h2>
+    <img class="photos1"   src="photos/room%20pics/standerd/Hyatt-Regency-Aqaba-P034-Marina-View-Room-King.16x9.jpg">
+    <img class="photos1"  src="photos/room%20pics/standerd/Hyatt-Regency-Aqaba-P035-Marina-View-Room-Balcony.16x9.jpg">
+    <img class="photos1"  src="photos/room%20pics/standerd/Hyatt-Regency-Aqaba-P037-Guest-Room-Bathroom.16x9.jpg">
+        <div>
+            <form >
+                <input type="button" value="For more details" onclick="details1()">
+            </form>
+        </div>
+        <div>
+            <h3 id="details1" hidden="hidden"></h3>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+        <h2 style="font-family: Century">Suite</h2>
+        <img class="photos1"  src="photos/room%20pics/suite/Hyatt-Regency-Aqaba-Ayla-Resort-P108-Royal-Suite-Bedroom.16x9.jpg">
+        <img class="photos1" src="photos/room%20pics/suite/Hyatt-Regency-Aqaba-Ayla-Resort-P110-Royal-Suite-Dining-Area.16x9.jpg">
+        <img class="photos1" src="photos/room%20pics/suite/Hyatt-Regency-Aqaba-Ayla-Resort-P107-Royal-Suite-Bathroom.16x9.jpg">
+        <div>
+            <form >
+                <input type="button" value="For more details" onclick="details2()">
+            </form>
+        </div>
+        <div>
+            <h3 id="details2" hidden="hidden"></h3>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+    <h2 style="font-family: Century">Delux</h2>
+    <img class="photos1"   src="photos/room%20pics/delux/Hyatt-Regency-Aqaba-P036-Guest-Room-2-Twin-Beds.16x9.jpg">
+        <img class="photos1"  src="photos/room%20pics/standerd/Hyatt-Regency-Aqaba-P035-Marina-View-Room-Balcony.16x9.jpg">
+    <img class="photos1"  src="photos/room%20pics/standerd/Hyatt-Regency-Aqaba-P037-Guest-Room-Bathroom.16x9.jpg">
+        <div>
+            <form >
+                <input type="button" value="For more details" onclick="details3()">
+            </form>
+        </div>
+        <div>
+            <h3 id="details3" hidden="hidden"></h3>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+    <h2 style="font-family: Century">Spa</h2>
+    <img class="photos1"   src="photos/room%20pics/spa/Hyatt-Regency-Aqaba-Ayla-Resort-P093-Aqua-Spa-Relaxation-Lounge.16x9.jpg">
+    <img class="photos1"  src="photos/room%20pics/spa/HR-P0315-Spa-Couple-Relaxing-Tea.16x9.jpg">
+    <img class="photos1"  src="photos/room%20pics/spa/Hyatt-Regency-Aqaba-Ayla-Resort-P094-Aqua-Spa-Treatment-Room.16x9.jpg">
     <div>
         <form >
-            <input type="button" value="For more details" onclick="details()">
+            <input type="button" value="For more details" onclick="details4()">
         </form>
     </div>
+    <div>
+        <h3 id="details4" hidden="hidden"></h3>
+    </div>
 </div>
-<div>
-    <h3 id="details" hidden="hidden"></h3>
 </div>
+
 </body>
 </html>
