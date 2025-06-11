@@ -48,12 +48,12 @@ body{
     height: 98%;
     width: 90%;
     margin: auto;
-    background: linear-gradient(0deg, hsla(0, 0%, 0%, 0), #fff), url(https://cache.marriott.com/aka-fonts/textures/rz/trc-pattern.svg);
+    background: linear-gradient(0deg, hsla(0, 100%, 100%, 0), #fff), url(https://cache.marriott.com/aka-fonts/textures/rz/trc-pattern.svg);
 
 
 }
 #photo10{
-    border: 3px solid  cadetblue;
+
 
     text-align: center;
     background-color: white;
@@ -122,9 +122,8 @@ body{
         text-shadow: 0 0 10px cadetblue,
         0 0 20px lightskyblue,
         0 0 30px lightblue;
-        backdrop-filter: blur(40px);
-        padding: 19px;
-        border-radius: 35px;
+
+
         font-family: Century;
 
 }
