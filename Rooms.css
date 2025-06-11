@@ -70,12 +70,13 @@ body{
 
 }
 .photos1 {
+
     width: 27%;
     position: relative;
     padding: 8px;
     text-align: center;
     border-radius: 10px;
-
+    border-color: bisque;
 }
 
 
@@ -122,13 +123,11 @@ body{
         text-shadow: 0 0 10px cadetblue,
         0 0 20px lightskyblue,
         0 0 30px lightblue;
-
-
         font-family: Century;
 
 }
 .button1{
-
+    padding: 15px;
     border-radius: 5px;
 }
 .button1:hover{
