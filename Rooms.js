@@ -1,15 +1,24 @@
-function details1(){
+function details1() {
     document.getElementById("details1").removeAttribute("hidden");
     document.getElementById("details1").innerHTML =
 
-        "<p>Price per night : 100$</p>"+
-        "<p>In-Room Amenities:</p>"+
-        "<p>55 smart flat-screen HDTV</p>"+
-        "<p>Blackout curtains</p>"+
-        "<p>Coffee maker</p>"+
-        "<p>Minifridge</p>"+
-        "<p>Iron and ironing board</p>"+
+        "<p>Price per night : 100$</p>" +
+        "<p>In-Room Amenities:</p>" +
+        "<p>55 smart flat-screen HDTV</p>" +
+        "<p>Blackout curtains</p>" +
+        "<p>Coffee maker</p>" +
+        "<p>Minifridge</p>" +
+        "<p>Iron and ironing board</p>" +
         "<p>In-room safe</p>"
+
+
+}
+function hide(){
+    document.getElementsByClassName("details1").removeAttribute("hidden");
+    document.getElementById("details1").innerHTML =
+
+       ""
+
 
 }
 function details2(){
