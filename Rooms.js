@@ -1,3 +1,26 @@
+   let x =  window.prompt("Enter your budget per night :");
+
+    if (x == null || x === "") {
+
+        window.alert("Sorry you did not enter a number!");
+
+
+    }
+    else if (x >= 100 && x < 200) {
+        window.alert("standard is suitable for you!");
+    }
+    else if (x>= 200 && x < 300) {
+        window.alert("Delux is suitable for you!");
+    }
+    else if (x >= 300) {
+        window.alert("Suite is suitable for you!");
+    }
+    else if (x >100) {
+        window.alert("Budget too low for our rooms!");
+
+}else{
+        window.alert("Invalid!");
+    }
 function details1() {
     document.getElementById("details1").removeAttribute("hidden");
     document.getElementById("details1").innerHTML =
@@ -13,14 +36,7 @@ function details1() {
 
 
 }
-function hide(){
-    document.getElementsByClassName("details1").removeAttribute("hidden");
-    document.getElementById("details1").innerHTML =
 
-       ""
-
-
-}
 function details2(){
     document.getElementById("details2").removeAttribute("hidden");
     document.getElementById("details2").innerHTML =
@@ -60,27 +76,4 @@ function details6(){
         "<p>Stander 100$ for each night</p>"+
         "<p>delux 200$ for each night</p>"+
         "<p>suite 300$ for each night</p>"
-}
-function all() {
-
-    let x =  window.prompt("budget :");
-
-    if (x == null || x === "") {
-        window.alert("Please enter a valid number!");
-
-
-    }
-
-    else if (x >= 100 && x < 200) {
-        window.alert("standard is suitable for you!");
-    }
-    else if (x >= 200 && x < 300) {
-        window.alert("Delux is suitable for you!");
-    }
-    else if (x >= 300) {
-        window.alert("Suite is suitable for you!");
-    }
-    else {
-        window.alert("Budget too low for our rooms!");
-    }
 }
