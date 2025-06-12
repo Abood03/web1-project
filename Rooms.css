@@ -129,6 +129,7 @@ body{
 .button1{
     padding: 15px;
     border-radius: 5px;
+    cursor: pointer;
 }
 .button1:hover{
     background-color: orange;
