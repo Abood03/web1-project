@@ -45,7 +45,7 @@ body{
 
     padding: 20px;
     border-radius: 20px;
-    height: 98%;
+    height: fit-content;
     width: 90%;
     margin: auto;
     background: linear-gradient(0deg, hsla(0, 100%, 100%, 0), #fff), url(https://cache.marriott.com/aka-fonts/textures/rz/trc-pattern.svg);
@@ -59,7 +59,7 @@ body{
     background-color: white;
     padding: 20px;
     border-radius: 20px;
-    height: 400%;
+    height: fit-content;
     width: 90%;
     margin: auto;
 
