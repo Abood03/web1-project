@@ -63,9 +63,12 @@ function click12(){
     let fullName=document.getElementById("name").value;
     let email=document.getElementById("email").value;
     let phoneNum=document.getElementById("mobile").value;
+    let start = new Date(document.getElementById("startDate").value);
+    let end = new Date(document.getElementById("endDate").value);
+    let date = Math.ceil((end - start) / (1000 * 60 * 60 * 24));
 
     if(document.getElementById("name").value!=""&&document.getElementById("email").value!=""&&
-        document.getElementById("mobile").value!=""){
+        document.getElementById("mobile").value!=""&&date>0){
     totalPrice();
     window.alert("Submitted Reservation")
 
