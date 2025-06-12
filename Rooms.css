@@ -120,9 +120,8 @@ body{
 }
 .fa{
 
-        text-shadow: 0 0 10px cadetblue,
-        0 0 20px lightskyblue,
-        0 0 30px lightblue;
+        text-shadow: 0 0 10px orange;
+
         font-family: Century;
 
 }
