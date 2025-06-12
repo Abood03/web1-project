@@ -15,7 +15,7 @@
     else if (x >= 300) {
         window.alert("Suite is suitable for you!");
     }
-    else if (x >100) {
+    else if (x <100&&x>0) {
         window.alert("Budget too low for our rooms!");
 
 }else{
