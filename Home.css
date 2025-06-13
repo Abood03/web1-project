@@ -1,5 +1,7 @@
 body{
-    background-color: whitesmoke;
+    background-image: url("photos/screen_2x.jpg");
+    background-size: 100%;
+    color: white;
 }
 .headerNew:hover{
     color: orange;
@@ -25,11 +27,7 @@ body{
 .links:hover{
     color: orange;
 }
-#centerMain{
-    background-image: url("photos/screen_2x.jpg");
-    background-size: 100%;
-    color: white;
-}
+
 #headerHome{
     text-align: right;
     color: white;
