@@ -39,10 +39,7 @@ body{
 }
 
 #photos{
-
-
     text-align: center;
-
     padding: 20px;
     border-radius: 20px;
     height: fit-content;
@@ -64,13 +61,8 @@ body{
     margin: auto;
 
 }
-.Desc{
-    display: flex;
 
-
-}
 .photos1 {
-
     width: 27%;
     position: relative;
     padding: 8px;
@@ -81,43 +73,11 @@ body{
 
 
 .photos1:hover {
-    box-shadow: 0 0 30px black;
+    box-shadow: 0 0 50px ;
 }
- #standerDesc1{
-     width: 22%;
-     position: relative;
-     z-index: auto;
-     left: 12%;
-     display: flex;
- }
-#standerDesc2{
-    display: flex;
-    width: 22%;
-    position: relative;
-    z-index: auto;
-    left: 17%;
 
-}
-#standerDesc3{
-    display: flex;
-    width: 22%;
-    position: relative;
-    z-index: auto;
-    left: 21%;
 
-}
-#details{
-    position: absolute;
-    top: 70%;
-    text-align: center;
-    left: 42%;
-}
-#bch{
-    padding: 5px;
-    display: flex;
-    width: 50px;
-    height:50px;
-}
+
 .fa{
 
         text-shadow: 0 0 10px orange;
