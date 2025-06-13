@@ -10,7 +10,7 @@
         window.alert("standard is suitable for you!");
     }
     else if (x>= 200 && x < 300) {
-        window.alert("Delux is suitable for you!");
+        window.alert("Deluxe is suitable for you!");
     }
     else if (x >= 300) {
         window.alert("Suite is suitable for you!");
