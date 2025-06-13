@@ -75,6 +75,10 @@ body{
     margin: 20px auto;
     box-shadow: 1px 1px 19px black;
 }
+#submit:hover{
+    background-color: orange;
+    border-color: orange;
+}
 #info{
     text-align: center;
 }
