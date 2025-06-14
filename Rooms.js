@@ -1,4 +1,5 @@
    let budget =  window.prompt("Enter your budget per night :");
+
     if (budget == null || budget === "") {
         window.alert("Sorry you did not enter a number!");
     }
