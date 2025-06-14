@@ -1,30 +1,26 @@
-   let x =  window.prompt("Enter your budget per night :");
-
-    if (x == null || x === "") {
-
+   let budget =  window.prompt("Enter your budget per night :");
+    if (budget == null || budget === "") {
         window.alert("Sorry you did not enter a number!");
-
-
     }
-    else if (x >= 100 && x < 200) {
+    else if (budget >= 100 && budget < 200) {
         window.alert("standard is suitable for you!");
     }
-    else if (x>= 200 && x < 300) {
-        window.alert("Deluxe is suitable for you!");
+    else if (budget>= 200 && budget < 300) {
+        window.alert("Delux is suitable for you!");
     }
-    else if (x >= 300) {
+    else if (budget >= 300) {
         window.alert("Suite is suitable for you!");
     }
-    else if (x <100&&x>0) {
+    else if (budget <100&&budget>0) {
         window.alert("Budget too low for our rooms!");
 
-}else{
+    }
+    else{
         window.alert("Invalid!");
     }
 function details1() {
     document.getElementById("details1").removeAttribute("hidden");
     document.getElementById("details1").innerHTML =
-
         "<p>Price per night : 100$</p>" +
         "<p>In-Room Amenities:</p>" +
         "<p>55 smart flat-screen HDTV</p>" +
@@ -34,7 +30,6 @@ function details1() {
         "<p>Iron and ironing board</p>" +
         "<p>In-room safe</p>"+
         "<p>Double click to hide!</p>"
-
 
 }
 
@@ -53,6 +48,7 @@ function details2(){
         "<p>Hair dryer</p>"+
         "<p>Robes and slippers</p>"+
         "<p>Double click to hide!</p>"
+
 }
 function details3(){
     document.getElementById("details3").removeAttribute("hidden");
@@ -73,6 +69,7 @@ function details3(){
         "<p>kitchenette</p>"+
         "<p>rain shower and deep soaking tub</p>"+
         "<p>Double click to hide!</p>"
+
 }
 function details4(){
     document.getElementById("details4").removeAttribute("hidden");
@@ -100,6 +97,7 @@ function details5(){
         "<p>RED Restaurant and Lounge</p>"+
         "<p>And there is Room Service</p>"+
         "<p>Double click to hide!</p>"
+
 }
 function details6(){
     document.getElementById("details6").removeAttribute("hidden");
@@ -110,4 +108,5 @@ function details6(){
         "<p>Tennis Court</p>" +
         "<p>And a lot more activities!</p>" +
         "<p>Double click to hide!</p>"
+
 }

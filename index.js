@@ -4,12 +4,12 @@ function totalPrice() {
     let phoneNum=document.getElementById("mobile").value;
     let start = new Date(document.getElementById("startDate").value);
     let end = new Date(document.getElementById("endDate").value);
-    let date = Math.ceil((end - start) / (1000 * 60 * 60 * 24));
+    let numOfNights = Math.ceil((end - start) / (1000 * 60 * 60 * 24));//86,400,000 milliseconds/day ceil
     let curruntTime=new Date();
-    console.log(date) ;
+    console.log(numOfNights) ;
     let total=0
     if(document.getElementById("name").value!=""&&document.getElementById("email").value!=""&&
-        document.getElementById("mobile").value!=""&&date>=1){
+        document.getElementById("mobile").value!=""&&numOfNights>=1){
         if (document.getElementById("Stander").checked){
             if (document.getElementById("serves").checked){
                 total = total + parseInt(document.getElementById("serves").value);
@@ -52,10 +52,11 @@ function totalPrice() {
                 "<h3 >Reservation receipt</h3>" +
                 "<p><b>Name: </b>" + fullName + "</p>" +
                 "<p><b>Email: </b>" + email + "</p>" +
-                "<p><b>Number of Nights: </b>" + date + "</p>" +
+                "<p><b>Number of Nights: </b>" + numOfNights + "</p>" +
                 "<p><b>Receipt Date: </b>" + curruntTime.getDate()+"/"+(curruntTime.getMonth()+1)+"/"+curruntTime.getFullYear() + "</p>" +
                 "<p><b>phone: </b>" + phoneNum + "</p>" +
-                "<p><b>Total Price: </b>" + (total*date) + "$</p>";
+                "<p><b>Total Price: </b>" + (total*numOfNights) + "$</p>";
+
             }
         }
     }
@@ -65,14 +66,11 @@ function click12(){
     let phoneNum=document.getElementById("mobile").value;
     let start = new Date(document.getElementById("startDate").value);
     let end = new Date(document.getElementById("endDate").value);
-    let date = Math.ceil((end - start) / (1000 * 60 * 60 * 24));
+    let numOfNights = Math.ceil((end - start) / (1000 * 60 * 60 * 24));
 
     if(document.getElementById("name").value!=""&&document.getElementById("email").value!=""&&
-        document.getElementById("mobile").value!=""&&date>0){
-    totalPrice();
+        document.getElementById("mobile").value!=""&&numOfNights>0){
     window.alert("Submitted Reservation")
-
-
     }
     else
         window.alert("fill your info")
