@@ -33,7 +33,7 @@ body{
     color: white;
     font-size: 20px;
     padding: 20px;
-    /*backdrop-filter: blur(19px);*/
+    backdrop-filter: blur(19px);
 }
 #mainButtom{
     color: cornflowerblue;
