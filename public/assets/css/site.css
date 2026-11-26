@@ -1,31 +1,55 @@
+body {
+    margin: 0;
+}
+
 .site-header {
-    text-align: right;
-    color: white;
-    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 20px;
-    backdrop-filter: blur(19px);
+    color: white;
+    font: bold 20px / 1.2 "Times New Roman", Times, serif;
+    text-shadow: 0 1px 2px #102426, 0 0 5px #102426;
 }
 
-.headerNew {
-    color: white;
-    text-align: left;
-    position: absolute;
+.site-header a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-header .headerNew {
+    margin-right: auto;
     font-size: 28px;
-    width: max-content;
-    text-decoration: none;
-    font-weight: bold;
 }
 
-.links {
-    color: white;
+.site-header .links {
     padding: 10px;
-    text-decoration: none;
-    position: relative;
-    top: 4px;
-    font-weight: bold;
 }
 
-.headerNew:hover,
-.links:hover {
+.site-header a:hover,
+.site-header a:focus-visible {
     color: orange;
+}
+
+.site-header a:focus-visible {
+    outline: 2px solid orange;
+    outline-offset: 3px;
+}
+
+@media (max-width: 38rem) {
+    .site-header {
+        padding: 0.65rem 0.35rem;
+        font-size: 1rem;
+    }
+
+    .site-header .headerNew {
+        flex-basis: 100%;
+        margin: 0 0 0.3rem;
+        text-align: center;
+    }
+
+    .site-header .links {
+        padding: 0.5rem 0.45rem;
+    }
 }
