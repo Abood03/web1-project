@@ -1,163 +1,244 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f6f8;
+    background-color: #eef1ef;
+    color: #202626;
+    font-family: Georgia, "Times New Roman", serif;
 }
 
-.site-header {
-    background-color: #333;
-}
-
-.about-section {
-    position: relative;
-}
-
-.hero-image img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    display: block;
-}
-
-.about-content {
-    position: absolute;
-    bottom: 20px;
-    left: 40px;
+.about-banner {
+    background: linear-gradient(rgba(11, 24, 26, 0.64), rgba(11, 24, 26, 0.53)),
+                url("../images/screen_2x.jpg") center / cover no-repeat;
+    background-color: #203b40;
     color: white;
 }
 
+.about-banner .site-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-banner .headerNew {
+    position: static;
+    margin-right: auto;
+}
+
+.about-banner .links {
+    top: auto;
+}
+
+.about-banner .links[aria-current="page"] {
+    color: orange;
+}
+
+.about-banner a:focus-visible {
+    outline: 2px solid orange;
+    outline-offset: 3px;
+}
+
+.about-content {
+    max-width: 62rem;
+    margin: auto;
+    padding: clamp(3.75rem, 9vw, 7.5rem) 1.25rem clamp(5rem, 11vw, 9rem);
+    text-align: center;
+}
+
 .about-content h1 {
-    font-size: 40px;
     margin: 0;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    font-size: clamp(2.6rem, 6.5vw, 5.25rem);
+    line-height: 1.05;
+    text-shadow: 0 0 20px rgba(157, 213, 237, 0.58), 0 2px 12px #18282c;
 }
 
 .about-content p {
-    font-size: 18px;
-    max-width: 600px;
-    margin: 10px 0 0;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    max-width: 42rem;
+    margin: 1.2rem auto 0;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.6;
+    text-shadow: 0 1px 5px #18282c;
 }
 
-.content-hash ul {
+.about-page {
+    position: relative;
+    width: min(72rem, calc(100% - 2rem));
+    margin: -2rem auto 0;
+    padding-bottom: 3.5rem;
+}
+
+.about-sections ul {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 0.85rem;
+    margin: 0 0 2rem;
+    padding: 0;
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 30px 20px;
-    margin: 0;
-    gap: 20px;
-    justify-content: center;
-    background-color: #fff;
+}
+
+.nav-card,
+.description-section > section {
+    border-radius: 15px;
+    background: whitesmoke;
+    box-shadow: 0 10px 26px rgba(18, 33, 35, 0.16);
 }
 
 .nav-card {
-    background-color: #ffffff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
-    width: 220px;
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 1rem;
+    border: 1px solid transparent;
 }
 
-.nav-card:hover {
-    background-color: #e0f7fa;
-    transform: translateY(-6px);
-    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+.nav-card:hover,
+.nav-card:focus-within {
+    border-color: orange;
+    background: #fff5e2;
 }
 
 .nav-card a {
-    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    color: inherit;
+    font-size: 1.125rem;
     font-weight: bold;
-    font-size: 18px;
-    color: #00796b;
-    display: block;
-    margin-bottom: 10px;
+    text-decoration: none;
 }
 
-.nav-card p {
-    font-size: 14px;
-    color: #444;
-    margin: 0;
+.nav-card a:hover {
+    text-decoration: underline;
 }
 
 .nav-card i {
-    margin-right: 8px;
-    color: #00796b;
+    margin-right: 0.25em;
+    color: #a35400;
+}
+
+.nav-card p,
+.description-section p {
+    margin: 0;
+    color: #444e4e;
+    line-height: 1.55;
+}
+
+.nav-card p {
+    font-size: 0.95rem;
 }
 
 .description-section {
-    background-color: #fff;
-    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
 }
 
-.description-section > div {
-    margin-bottom: 40px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 20px;
+.description-section > section {
+    padding: clamp(1.15rem, 3vw, 2rem);
+    scroll-margin-top: 1rem;
 }
 
 .description-section h2 {
-    color: #333;
+    margin: 0 0 0.65rem;
+    font-size: clamp(1.65rem, 3vw, 2.2rem);
 }
 
-.description-section p {
-    color: #555;
-    font-size: 16px;
-    line-height: 1.6;
+.hotel-profile {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: clamp(1rem, 4vw, 3rem);
+}
+
+.hotel-profile img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 .stars-container {
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 0.15rem;
+    margin: 0.45rem 0;
+}
+
+.star-row {
+    position: relative;
 }
 
 .star-row input {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip-path: inset(50%);
 }
 
 .star-row label {
-    font-size: 30px;
-    color: #ccc;
+    display: grid;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+    color: #646c69;
     cursor: pointer;
+    font-size: 1.8rem;
+    line-height: 1;
 }
 
-.star-row input:checked ~ label {
-    color: #f39c12;
-}
-
-.star-row label:hover,
-.star-row label:hover ~ label {
-    color: #f39c12;
+.star-row input:checked + label,
+.star-row:has(~ .star-row input:checked) label,
+.star-row label:hover {
+    color: #a35400;
 }
 
 .submit-button {
-    background-color: #00bcd4;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    margin-top: 1rem;
+    padding: 0.65rem 1.25rem;
+    border: 0;
+    border-radius: 18px;
+    background: white;
+    color: inherit;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.28);
     cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
+    font: inherit;
+    font-size: 1.125rem;
 }
 
-.submit-button:hover {
-    background-color: #0097a7;
+.submit-button:hover,
+.submit-button:focus-visible {
+    background: orange;
 }
 
-@media (max-width: 600px) {
-    .nav-card {
-        width: 100%;
+.nav-card a:focus-visible,
+.star-row input:focus-visible + label,
+.submit-button:focus-visible {
+    outline: 2px solid #a35400;
+    outline-offset: 3px;
+}
+
+@media (max-width: 50rem) {
+    .about-sections ul {
+        grid-template-columns: repeat(auto-fit, minmax(min(9rem, 100%), 1fr));
+    }
+}
+
+@media (max-width: 38rem) {
+    .about-banner .site-header {
+        padding: 0.65rem 0.35rem;
     }
 
-    .about-content {
-        left: 20px;
-        right: 20px;
+    .about-banner .headerNew {
+        flex-basis: 100%;
+        margin: 0 0 0.3rem;
+        text-align: center;
     }
 
-    .about-content h1 {
-        font-size: 28px;
+    .about-banner .links {
+        padding: 0.5rem 0.45rem;
+        font-size: 1rem;
+    }
+
+    .description-section,
+    .hotel-profile {
+        grid-template-columns: 1fr;
     }
 }
