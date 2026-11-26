@@ -1,43 +1,12 @@
 body{
-    background-image: url("photos/screen_2x.jpg");
+    background-image: url("../images/screen_2x.jpg");
     background-size: 100%;
     color: white;
 }
-.headerNew:hover{
-    color: orange;
-
-}
-.headerNew{
-    color: white;
-    text-align: left;
+.headerNew {
     position: fixed;
-    font-size: 28px;
-    width: max-content;
-    text-decoration: none;
-    font-weight: bold;
-}
-.links{
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    position: relative;
-    top: 4px;
-    font-weight: bold;
-}
-.links:hover{
-    color: orange;
 }
 
-#headerHome{
-    text-align: right;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    backdrop-filter: blur(19px);
-}
-#mainButtom{
-    color: cornflowerblue;
-}
 #homePageDes{
     align-content: center;
     font-size: 60px;

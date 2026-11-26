@@ -7,7 +7,7 @@
         window.alert("standard is suitable for you!");
     }
     else if (budget>= 200 && budget < 300) {
-        window.alert("Delux is suitable for you!");
+        window.alert("Deluxe is suitable for you!");
     }
     else if (budget >= 300) {
         window.alert("Suite is suitable for you!");
@@ -54,7 +54,7 @@ function details2(){
 function details3(){
     document.getElementById("details3").removeAttribute("hidden");
     document.getElementById("details3").innerHTML =
-        "<p>Price per night : 200$</p>" +
+        "<p>Price per night : 300$</p>" +
         "<p>In-Room Amenities:</p>" +
         "<p>55 smart flat-screen HDTV</p>" +
         "<p>Blackout curtains</p>" +
@@ -75,7 +75,7 @@ function details3(){
 function details4(){
     document.getElementById("details4").removeAttribute("hidden");
     document.getElementById("details4").innerHTML =
-        "<p>Auditional Fee Per day : 50$</p>" +
+        "<p>Additional fee per night : 50$</p>" +
         "<p>Spa Hours: 9:00 am till 9:00 pm\n</p>" +
         "<p>Pool Opening time: 11:00 am till sunset</p>" +
         "<p>Last Reservation: 6:30 pm for 8:00 pm treatment</p>" +
@@ -89,7 +89,7 @@ function details4(){
 function details5(){
     document.getElementById("details5").removeAttribute("hidden");
     document.getElementById("details5").innerHTML =
-        "<p>Resturants :</p>" +
+        "<p>Restaurants :</p>" +
         "<p>The Olive Tree</p>" +
         "<p>Tapas del Mar</p>" +
         "<p>Cascades</p>" +

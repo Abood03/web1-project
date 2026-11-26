@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/images/logo.png">
+    <title>Book Now</title>
+    <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="stylesheet" href="assets/css/booking.css">
+
+    <script src="assets/js/booking.js" defer></script>
+</head>
+<body>
+<div id="BookStyle">
+    <nav class="site-header" aria-label="Main navigation" id="header">
+        <div class="headerNew"><span><a class="headerNew" href="index.html">The Wellhall</a></span></div>
+        <a class="links" href="index.html">Home</a>
+        <a class="links" href="book-now.html" aria-current="page">Book Now</a>
+        <a class="links" href="rooms.html">Rooms</a>
+        <a class="links" href="about.html">About</a>
+    </nav>
+        <form id="bookForm" autocomplete="off">
+            <h1 id="info">Booking demo</h1>
+            <p>Use sample details to preview a price in your browser.</p>
+            <hr>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" required><br>
+            <label for="startDate">Check-in Date:</label>
+            <input type="date" id="startDate" required><br>
+            <label for="endDate">Check-out Date:</label>
+            <input type="date" id="endDate" required><br>
+            <hr>
+            <fieldset>
+                <legend>Room type</legend>
+                <label><input type="radio" name="roomType" value="100" required> Standard $100 per night</label><br>
+                <label><input type="radio" name="roomType" value="200"> Deluxe $200 per night</label><br>
+                <label><input type="radio" name="roomType" value="300"> Suite $300 per night</label>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Extras per night</legend>
+                <label><input type="checkbox" name="extras" value="10"> Gym $10</label><br>
+                <label><input type="checkbox" name="extras" value="50"> Spa $50</label><br>
+                <label><input type="checkbox" name="extras" value="15"> Breakfast $15</label>
+            </fieldset>
+            <button type="submit" id="submit" disabled>Review quote</button>
+            <noscript>Enable JavaScript to calculate a quote.</noscript>
+        </form>
+    <div class="quote">
+        <section id="summary" aria-labelledby="quote-title" tabindex="-1" hidden>
+            <h2 id="quote-title">Booking quote</h2>
+            <p><strong>Name:</strong> <span id="quote-name"></span></p>
+            <p><strong>Email:</strong> <span id="quote-email"></span></p>
+            <p><strong>Mobile:</strong> <span id="quote-mobile"></span></p>
+            <p><strong>Nights:</strong> <span id="quote-nights"></span></p>
+            <p><strong>Quote date:</strong> <span id="quote-date"></span></p>
+            <p><strong>Total:</strong> <span id="quote-total"></span></p>
+        </section>
+    </div>
+</div>
+
+</body>
+</html>

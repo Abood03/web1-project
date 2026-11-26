@@ -1,39 +1,8 @@
 body{
     background-color: whitesmoke;
-    background-image: url("photos/screen_2x.jpg");
+    background-image: url("../images/screen_2x.jpg");
     background-size: 100%;
     height: 1000px;
-}
-#header {
-    text-align: right;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    backdrop-filter: blur(19px);
-}
-.headerNew{
-    color: white;
-    text-align: left;
-    position: absolute;
-    font-size: 28px;
-    width: max-content;
-    text-decoration: none;
-    font-weight: bold;
-}
-.headerNew:hover{
-    color: orange;
-
-}
-.links{
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    position: relative;
-    top: 4px;
-    font-weight: bold;
-}
-.links:hover{
-    color: orange;
 }
 #bookForm {
     font-size: 20px;
@@ -48,10 +17,21 @@ body{
     margin: 20px auto;
 }
 
-#resipte {
+.quote {
     width: 80%;
     max-width: 600px;
     margin: 20px auto;
+}
+
+#bookForm fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#bookForm legend {
+    font-size: 25px;
+    padding: 0;
 }
 
 #summary {
@@ -82,8 +62,3 @@ body{
 #info{
     text-align: center;
 }
-
-
-
-
-
