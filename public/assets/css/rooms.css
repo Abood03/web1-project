@@ -65,6 +65,7 @@ hr{
 }
 
 @media (max-width: 38rem) {
+    #photo10,
     #photos {
         max-width: calc(100% - 40px);
     }
